@@ -142,3 +142,20 @@ header > img {
 #info img {
 	width: 100%;
 }
+
+/* FOOTER */
+footer {
+	border-top: solid 1px black;
+	padding: 2rem 0;
+}
+
+footer p {
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+
+small {
+	display: block;
+	text-align: center;
+	margin: 5% 0 10%;
+}
