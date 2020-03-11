@@ -104,10 +104,10 @@ header {
 }
 
 header div {
+	width: 50%;
 	display: inline-block;
 	text-align: center;
-	margin-left: 15%;
-	padding: 8% 0;
+	margin: 3%;
 }
 
 h1 {
@@ -125,8 +125,11 @@ h1 {
 }
 
 header > img {
-	float: right;
-	margin-right: 15%;
+	width: 33%;
+	margin: 3%;
+	display: inline-block;
+	position: relative;
+	top: 3rem;
 }
 
 /* INFO SECTION */
