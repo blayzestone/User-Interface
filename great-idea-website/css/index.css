@@ -93,10 +93,24 @@ nav {
 	z-index: 1
 }
 
+@keyframes pulse {
+	0% {color: inherit;}
+	25% {color: #DAA520;}
+	50% {color: #FAFAD2;}
+	100% {color: #DAA520;}
+}
+
 nav a {
 	vertical-align: middle;
 	margin: 0 2%;
 	color: #999;
+}
+
+nav a:hover {
+	animation-name: pulse;
+	animation-duration: .5s;
+	animation-timing-function: ease-out;
+	color: #DAA520;
 }
 
 .logo {
@@ -123,11 +137,21 @@ h1 {
 	font-size: 4rem;
 }
 
+@keyframes shake {
+  0% {transform: rotate(10deg);}
+	50% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+}
+
 .call-to-action {
 	display: inline-block;
 	border: solid 1px black;
 	padding: .3rem 2rem;
 	margin: 5% 0;
+}
+.call-to-action:hover {
+	animation-name: shake;
+	animation-duration: .2s;;
 }
 
 header > img {
