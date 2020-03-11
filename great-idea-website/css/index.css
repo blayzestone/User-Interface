@@ -83,8 +83,14 @@ a {
 
 /* HEADER */
 nav {
-	margin-bottom: 6%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	text-align: center;
+	background-color: #eee; 
+	padding: 1rem 0;
+	z-index: 1
 }
 
 nav a {
