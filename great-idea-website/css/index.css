@@ -128,3 +128,16 @@ header > img {
 }
 
 /* INFO SECTION */
+#info div {
+	display: inline-block;
+	width: 33%;
+	padding: 2rem;
+}
+
+#info .features, #info .about {
+	width: 49%;
+}
+
+#info img {
+	width: 100%;
+}
