@@ -118,16 +118,18 @@ nav a:hover {
 }
 
 header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	border-bottom: solid black 1px;
 	margin: 0 auto;
-	padding: 3% 0 6%;
+	padding-top: 5%;
 }
 
 header div {
-	width: 50%;
-	display: inline-block;
+	margin: 5%;
 	text-align: center;
-	margin: 3%;
 }
 
 h1 {
@@ -155,22 +157,23 @@ h1 {
 }
 
 header > img {
-	width: 33%;
-	margin: 3%;
-	display: inline-block;
-	position: relative;
-	top: 3rem;
+	height: 100%;
+	margin: 5%;
 }
 
 /* INFO SECTION */
+#info {
+	display: flex;
+	flex-flow: row wrap;
+}
+
 #info div {
-	display: inline-block;
 	width: 33%;
 	padding: 2rem;
 }
 
 #info .features, #info .about {
-	width: 49%;
+	width: 50%;
 }
 
 #info img {
