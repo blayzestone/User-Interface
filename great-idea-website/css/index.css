@@ -64,3 +64,132 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* GENERAL STYLES */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* HEADER */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #eee; 
+	padding: 1rem 0;
+	z-index: 1
+}
+
+@keyframes pulse {
+	0% {color: inherit;}
+	25% {color: #DAA520;}
+	50% {color: #FAFAD2;}
+	100% {color: #DAA520;}
+}
+
+nav a {
+	vertical-align: middle;
+	margin: 0 2%;
+	color: #999;
+}
+
+nav a:hover {
+	animation-name: pulse;
+	animation-duration: .5s;
+	animation-timing-function: ease-out;
+	color: #DAA520;
+}
+
+.logo {
+	margin-left: 4%;
+}
+
+header {
+	border-bottom: solid black 1px;
+	margin: 0 auto;
+	padding: 3% 0 6%;
+}
+
+header div {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	margin: 3%;
+}
+
+h1 {
+	word-spacing: 10px;
+	margin: 0 auto;
+	width: min-content;
+	font-size: 4rem;
+}
+
+@keyframes shake {
+  0% {transform: rotate(10deg);}
+	50% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.call-to-action {
+	display: inline-block;
+	border: solid 1px black;
+	padding: .3rem 2rem;
+	margin: 5% 0;
+}
+.call-to-action:hover {
+	animation-name: shake;
+	animation-duration: .2s;;
+}
+
+header > img {
+	width: 33%;
+	margin: 3%;
+	display: inline-block;
+	position: relative;
+	top: 3rem;
+}
+
+/* INFO SECTION */
+#info div {
+	display: inline-block;
+	width: 33%;
+	padding: 2rem;
+}
+
+#info .features, #info .about {
+	width: 49%;
+}
+
+#info img {
+	width: 100%;
+}
+
+/* FOOTER */
+footer {
+	border-top: solid 1px black;
+	padding: 2rem 0;
+}
+
+footer p {
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+
+small {
+	display: block;
+	text-align: center;
+	margin: 5% 0 10%;
+}
